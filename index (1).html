@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiranex Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🌤️ Weather Dashboard</h1>
+            <p>Get real-time weather information for any city</p>
+        </header>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name..."
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <p id="errorMessage" class="error"></p>
+
+        <div id="loading" class="loading">
+            Loading weather...
+        </div>
+
+        <section id="weatherCard" class="weather-card">
+
+            <div class="location">
+                <h2 id="cityName">--</h2>
+                <p id="countryName">--</p>
+            </div>
+
+            <div class="weather-main">
+                <div class="weather-icon" id="weatherIcon">🌤️</div>
+                <div>
+                    <h2 id="temperature">--°C</h2>
+                    <p id="weatherDescription">--</p>
+                </div>
+            </div>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>🌡️</span>
+                    <h3>Temperature</h3>
+                    <p id="tempValue">-- °C</p>
+                </div>
+
+                <div class="detail">
+                    <span>💧</span>
+                    <h3>Humidity</h3>
+                    <p id="humidityValue">-- %</p>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <h3>Wind Speed</h3>
+                    <p id="windValue">-- km/h</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Developed for Thiranex Task 4</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
